@@ -20,7 +20,7 @@
 + (UIImage *)sd_imageWithData:(NSData *)data {
     UIImage *image;
     NSString *imageContentType = [NSData sd_contentTypeForImageData:data];
-    if ([imageContentType isEqualToString:@"image/gif"]) {
+    if (NO) {
         image = [UIImage sd_animatedGIFWithData:data];
     }
 #ifdef SD_WEBP
